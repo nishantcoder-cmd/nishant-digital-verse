@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NISHANT DAHIYA — Gallery</title>
+<meta name="description" content="Visual gallery of Nishant Dahiya's digital universe: original anime-inspired atmosphere, future cities, space, cyberpunk, digital art and project visuals.">
+<meta property="og:title" content="NISHANT DAHIYA — Gallery">
+<meta property="og:description" content="Original anime-inspired art, neon cities, space fields and project visuals — every image original or self-generated.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="./gallery.html">
+<meta property="og:image" content="hero-character.jpg">
+<meta name="theme-color" content="#04020a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2304020a'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='36' text-anchor='middle' fill='%2322d3ee'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="gallery">
+
+<div id="boot" role="status" aria-label="Loading site">
+  <div class="boot-logo">NISHANT<b>.</b></div>
+  <div class="boot-bar"><i></i></div>
+  <div class="boot-log">
+    <span>INITIALIZING DIGITAL IDENTITY</span>
+    <span>LOADING VISUAL CORE</span>
+    <span>CONNECTING</span>
+    <span>READY</span>
+  </div>
+  <button class="boot-skip">SKIP BOOT →</button>
+</div>
+
+<div class="bg-system" aria-hidden="true">
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-aurora a1"></div><div class="bg-aurora a2"></div>
+  <div class="bg-fog"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-orb o1"></div><div class="bg-orb o2"></div>
+  <div class="bg-scan"></div><div class="bg-grain"></div>
+</div>
+
+<div id="cursor-dot" aria-hidden="true"></div>
+<div id="cursor-glow" aria-hidden="true"></div>
+<div id="page-fx" aria-hidden="true"></div>
+
+<header id="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html" data-nav aria-label="NISHANT — home">NISHANT<i>.</i></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-nav>HOME</a></li>
+        <li><a href="about.html" data-nav>ABOUT</a></li>
+        <li><a href="works.html" data-nav>MY WORK</a></li>
+        <li><a href="projects.html" data-nav>PROJECTS</a></li>
+        <li><a href="skills.html" data-nav>SKILLS</a></li>
+        <li><a href="gallery.html" data-nav aria-current="page">GALLERY</a></li>
+        <li><a href="music.html" data-nav>MUSIC</a></li>
+        <li><a href="status.html" data-nav>STATUS</a></li>
+        <li><a href="contact.html" data-nav>CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <span class="nav-status"><span class="dot"></span> ONLINE</span>
+      <button class="nav-discord" data-copy="BLANKONTOPP" title="Copy my Discord username">BLANKONTOPP</button>
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+    <div class="page-head">
+      <span class="page-kicker">FILE // IDENTITY-06</span>
+      <h1 class="page-title glitch" data-text="GALLERY">GALLERY</h1>
+      <p class="page-sub">The visual layer of the universe. All artwork is original or self-generated — no copyrighted anime screenshots, no stolen art. Click any frame to open the lightbox.</p>
+    </div>
+
+    <figure class="g-featured reveal">
+      <img src="works-city.webp" alt="Original anime-inspired character overlooking a vast neon megacity at night" fetchpriority="high">
+      <div class="g-cap"><b>NEON HORIZON — THE CITY THAT NEVER SLEEPS</b><span>// FEATURED · ORIGINAL ART</span></div>
+    </figure>
+
+    <div class="g-filters reveal" role="group" aria-label="Gallery filters">
+      <button class="g-filter on" data-filter="all">ALL</button>
+      <button class="g-filter" data-filter="anime">ANIME ATMOSPHERE</button>
+      <button class="g-filter" data-filter="city">FUTURE CITY</button>
+      <button class="g-filter" data-filter="space">SPACE</button>
+      <button class="g-filter" data-filter="cyber">CYBERPUNK</button>
+      <button class="g-filter" data-filter="art">DIGITAL ART</button>
+      <button class="g-filter" data-filter="proj">MY PROJECTS</button>
+    </div>
+
+    <div class="masonry reveal" data-delay="1">
+      <button class="g-item" data-cat="anime" data-caption="ORIGINAL CHARACTER — FULL RENDER // ANIME ATMOSPHERE">
+        <img src="hero-character.webp" alt="Full-body original anime character with silver hair holding crackling blue energy" loading="lazy">
+        <span class="g-cap"><b>FULL RENDER — ENERGY HAND</b><span>ANIME ATMOSPHERE</span></span>
+      </button>
+      <button class="g-item" data-cat="proj" data-caption="CLOUST HOST — HOSTING DASHBOARD CONCEPT // MY PROJECTS">
+        <img src="cloust-host.webp" alt="Futuristic hosting dashboard concept with glowing panels" loading="lazy">
+        <span class="g-cap"><b>CLOUST HOST PANEL</b><span>MY PROJECTS</span></span>
+      </button>
+      <button class="g-item" data-cat="space" data-caption="DEEP FIELD NEBULA // SPACE">
+        <img src="space.webp" alt="Purple and blue nebula clouds with scattered stars in deep space" loading="lazy">
+        <span class="g-cap"><b>DEEP FIELD NEBULA</b><span>SPACE</span></span>
+      </button>
+      <button class="g-item" data-cat="anime" data-caption="SIDE PORTRAIT IN NEON RAIN // ANIME ATMOSPHERE">
+        <img src="about-portrait.webp" alt="Side portrait of silver-haired anime character amid holographic panels and city lights" loading="lazy">
+        <span class="g-cap"><b>SIDE PORTRAIT — NEON RAIN</b><span>ANIME ATMOSPHERE</span></span>
+      </button>
+      <button class="g-item" data-cat="cyber" data-caption="DIGITAL RAIN PROTOCOL // CYBERPUNK">
+        <img src="digital-rain.webp" alt="Vertical streams of glowing cyan and purple glyph blocks falling on black" loading="lazy">
+        <span class="g-cap"><b>DIGITAL RAIN PROTOCOL</b><span>CYBERPUNK</span></span>
+      </button>
+      <button class="g-item" data-cat="proj" data-caption="MINECRAFT NIGHT MONOLITH // MY PROJECTS">
+        <img src="minecraft.webp" alt="Voxel night landscape with glowing futuristic monolith" loading="lazy">
+        <span class="g-cap"><b>NIGHT MONOLITH SERVER</b><span>MY PROJECTS</span></span>
+      </button>
+      <button class="g-item" data-cat="city" data-caption="SYNTH GRID CITY // FUTURE CITY">
+        <img src="cyberpunk.webp" alt="Retro-futuristic neon grid plane with glowing sun and city silhouette" loading="lazy">
+        <span class="g-cap"><b>SYNTH GRID CITY</b><span>FUTURE CITY</span></span>
+      </button>
+      <button class="g-item" data-cat="anime" data-caption="HEADPHONES SESSION // ANIME ATMOSPHERE">
+        <img src="music-headphones.webp" alt="Anime character with glowing futuristic headphones immersed in music" loading="lazy">
+        <span class="g-cap"><b>HEADPHONES SESSION</b><span>ANIME ATMOSPHERE</span></span>
+      </button>
+      <button class="g-item" data-cat="art" data-caption="FLOW FIELD STUDY 07 // DIGITAL ART">
+        <img src="digital-art.webp" alt="Thousands of flowing neon particle lines forming an abstract field" loading="lazy">
+        <span class="g-cap"><b>FLOW FIELD STUDY 07</b><span>DIGITAL ART</span></span>
+      </button>
+      <button class="g-item" data-cat="proj" data-caption="STATUS MONITOR CONCEPT // MY PROJECTS">
+        <img src="status-page.webp" alt="Holographic status monitor with uptime bars and heartbeat graph" loading="lazy">
+        <span class="g-cap"><b>STATUS MONITOR</b><span>MY PROJECTS</span></span>
+      </button>
+      <button class="g-item" data-cat="anime" data-caption="SILHOUETTE PORTAL // ANIME ATMOSPHERE">
+        <img src="gallery-silhouette.webp" alt="Silhouette of a coated figure facing a swirling portal of purple energy" loading="lazy">
+        <span class="g-cap"><b>SILHOUETTE PORTAL</b><span>ANIME ATMOSPHERE</span></span>
+      </button>
+      <button class="g-item" data-cat="proj" data-caption="WEB EXPERIMENTS FRAMES // MY PROJECTS">
+        <img src="web-experiments.webp" alt="Floating glass browser frames with neon wireframes in space" loading="lazy">
+        <span class="g-cap"><b>EXPERIMENT FRAMES</b><span>MY PROJECTS</span></span>
+      </button>
+      <button class="g-item" data-cat="space" data-caption="NEBULA FIELD — SITE BACKGROUND STUDY // SPACE">
+        <img src="nebula-bg.webp" alt="Subtle dark nebula field used as a site background layer" loading="lazy">
+        <span class="g-cap"><b>NEBULA FIELD STUDY</b><span>SPACE</span></span>
+      </button>
+      <button class="g-item" data-cat="proj" data-caption="AI NEURAL CONSTELLATION // MY PROJECTS">
+        <img src="ai-experiments.webp" alt="Glowing neural network constellation in purple and cyan" loading="lazy">
+        <span class="g-cap"><b>NEURAL CONSTELLATION</b><span>MY PROJECTS</span></span>
+      </button>
+      <button class="g-item" data-cat="city" data-caption="BUILDER OVER THE MEGACITY // FUTURE CITY">
+        <img src="works-city.webp" alt="Character from behind overlooking neon megacity" loading="lazy">
+        <span class="g-cap"><b>OVER THE MEGACITY</b><span>FUTURE CITY</span></span>
+      </button>
+      <button class="g-item" data-cat="proj" data-caption="SERVER HALL PANELS // MY PROJECTS">
+        <img src="hosting-ui.webp" alt="Abstract glowing server racks with floating glass control panels" loading="lazy">
+        <span class="g-cap"><b>SERVER HALL PANELS</b><span>MY PROJECTS</span></span>
+      </button>
+    </div>
+
+    <p class="form-note reveal" style="margin-top:34px">ART POLICY // Character art is original, generated for this site and art-directed by hand. Abstract pieces (digital rain, flow fields, nebulae, grid cities) are procedurally generated with code. Nothing here is copied from existing anime or artists.</p>
+  </div>
+</main>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+  <button class="lb-btn lb-close" aria-label="Close lightbox">✕</button>
+  <button class="lb-btn lb-prev" aria-label="Previous image">←</button>
+  <img src="" alt="">
+  <figcaption></figcaption>
+  <button class="lb-btn lb-next" aria-label="Next image">→</button>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="index.html" data-nav>NISHANT<i>.</i></a>
+        <p>A personal digital universe — AI experiments, web builds, Minecraft infrastructure and phonk atmosphere. Hand-built with vanilla HTML, CSS and JavaScript.</p>
+      </div>
+      <div>
+        <div class="foot-h">Navigate</div>
+        <ul class="foot-links">
+          <li><a href="index.html" data-nav>HOME</a></li>
+          <li><a href="about.html" data-nav>ABOUT</a></li>
+          <li><a href="works.html" data-nav>MY WORK</a></li>
+          <li><a href="projects.html" data-nav>PROJECTS</a></li>
+          <li><a href="skills.html" data-nav>SKILLS</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-h">Signal</div>
+        <ul class="foot-links">
+          <li><a href="music.html" data-nav>MUSIC ROOM</a></li>
+          <li><a href="status.html" data-nav>SYSTEM STATUS</a></li>
+          <li><a href="contact.html" data-nav>CONTACT</a></li>
+          <li><button class="copy-btn" data-copy="BLANKONTOPP">DISCORD: BLANKONTOPP ⧉</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 NISHANT DAHIYA — ALL VISUALS ORIGINAL</span>
+      <span>NO COOKIES · NO TRACKERS · VANILLA CODE</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

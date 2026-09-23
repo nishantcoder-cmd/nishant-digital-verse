@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NISHANT DAHIYA — My Work</title>
+<meta name="description" content="The work of Nishant Dahiya: Cloust Host, personal status page, Minecraft projects, futuristic web experiences, AI experiments and hosting UI concepts.">
+<meta property="og:title" content="NISHANT DAHIYA — My Work">
+<meta property="og:description" content="Cloust Host, Minecraft projects, futuristic web experiences, AI experiments and hosting UI — presented as cinematic glass panels.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="./works.html">
+<meta property="og:image" content="hero-character.jpg">
+<meta name="theme-color" content="#04020a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2304020a'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='36' text-anchor='middle' fill='%2322d3ee'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="works" data-hud>
+
+<div id="boot" role="status" aria-label="Loading site">
+  <div class="boot-logo">NISHANT<b>.</b></div>
+  <div class="boot-bar"><i></i></div>
+  <div class="boot-log">
+    <span>INITIALIZING DIGITAL IDENTITY</span>
+    <span>LOADING VISUAL CORE</span>
+    <span>CONNECTING</span>
+    <span>READY</span>
+  </div>
+  <button class="boot-skip">SKIP BOOT →</button>
+</div>
+
+<div class="bg-system" aria-hidden="true">
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-aurora a1"></div><div class="bg-aurora a2"></div>
+  <div class="bg-fog"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-orb o1"></div><div class="bg-orb o2"></div>
+  <div class="bg-scan"></div><div class="bg-grain"></div>
+</div>
+
+<div id="cursor-dot" aria-hidden="true"></div>
+<div id="cursor-glow" aria-hidden="true"></div>
+<div id="page-fx" aria-hidden="true"></div>
+
+<header id="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html" data-nav aria-label="NISHANT — home">NISHANT<i>.</i></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-nav>HOME</a></li>
+        <li><a href="about.html" data-nav>ABOUT</a></li>
+        <li><a href="works.html" data-nav aria-current="page">MY WORK</a></li>
+        <li><a href="projects.html" data-nav>PROJECTS</a></li>
+        <li><a href="skills.html" data-nav>SKILLS</a></li>
+        <li><a href="gallery.html" data-nav>GALLERY</a></li>
+        <li><a href="music.html" data-nav>MUSIC</a></li>
+        <li><a href="status.html" data-nav>STATUS</a></li>
+        <li><a href="contact.html" data-nav>CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <span class="nav-status"><span class="dot"></span> ONLINE</span>
+      <button class="nav-discord" data-copy="BLANKONTOPP" title="Copy my Discord username">BLANKONTOPP</button>
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+    <div class="page-head">
+      <span class="page-kicker">FILE // IDENTITY-03</span>
+      <h1 class="page-title glitch" data-text="MY WORK">MY WORK</h1>
+      <p class="page-sub">Personal builds and concept work, presented as panels from a digital command center. Concept pieces are labelled as concepts — nothing here pretends to be more than it is.</p>
+    </div>
+
+    <!-- ============ FEATURED ============ -->
+    <section class="glass featured reveal" data-tilt>
+      <span class="chip pink featured-tag">FEATURED BUILD</span>
+      <div class="featured-img">
+        <img src="cloust-host.webp" alt="Futuristic dark hosting dashboard concept art with glowing glass panels and node maps" loading="lazy">
+      </div>
+      <div class="featured-body">
+        <span class="chip cat">HOSTING CONCEPT</span>
+        <h3>CLOUST HOST</h3>
+        <p>My personal hosting brand concept — a vision of clean, futuristic control panels for game servers and small web projects. Currently a design &amp; learning project: the interfaces are concepts I design and prototype while studying how real hosting infrastructure works.</p>
+        <div class="tech-row">
+          <span class="chip">UI DESIGN</span><span class="chip">HOSTING CONCEPTS</span><span class="chip">HTML / CSS</span>
+        </div>
+        <a class="btn btn-primary" href="projects.html#p1" data-nav data-magnetic>VIEW PROJECT</a>
+      </div>
+    </section>
+
+    <!-- ============ WORK GRID ============ -->
+    <section style="margin-top:44px">
+      <h2 class="section-title reveal">ALL PANELS <small>// six builds from the universe</small></h2>
+      <div class="work-grid">
+
+        <article class="glass work-card reveal" data-delay="1" data-tilt>
+          <div class="work-media">
+            <img src="cloust-host.webp" alt="Abstract futuristic cloud hosting dashboard with glowing graphs and node connections" loading="lazy">
+            <span class="scan" aria-hidden="true"></span>
+            <span class="chip cat work-cat">HOSTING</span>
+          </div>
+          <div class="work-body">
+            <h3>CLOUST HOST</h3>
+            <p>A personal hosting brand concept: futuristic panel designs, node maps and the study of how game &amp; web hosting actually runs under the hood.</p>
+            <div class="tech-row"><span class="chip">UI DESIGN</span><span class="chip">SERVER BASICS</span></div>
+            <a class="btn btn-sm" href="projects.html#p1" data-nav>VIEW PROJECT</a>
+          </div>
+        </article>
+
+        <article class="glass work-card reveal" data-delay="2" data-tilt>
+          <div class="work-media">
+            <img src="status-page.webp" alt="Futuristic status monitor interface concept with uptime bars and heartbeat graphs" loading="lazy">
+            <span class="scan" aria-hidden="true"></span>
+            <span class="chip cat work-cat">LIVE PAGE</span>
+          </div>
+          <div class="work-body">
+            <h3>PERSONAL STATUS PAGE</h3>
+            <p>A live dashboard of this digital identity — local time, current focus and boot terminal. The concept art became a real page on this site.</p>
+            <div class="tech-row"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">VANILLA JS</span></div>
+            <a class="btn btn-sm" href="status.html" data-nav>VIEW PROJECT</a>
+          </div>
+        </article>
+
+        <article class="glass work-card reveal" data-delay="3" data-tilt>
+          <div class="work-media">
+            <img src="minecraft.webp" alt="Stylized voxel sandbox world at night with a glowing futuristic monolith and aurora sky" loading="lazy">
+            <span class="scan" aria-hidden="true"></span>
+            <span class="chip cat work-cat">MINECRAFT</span>
+          </div>
+          <div class="work-body">
+            <h3>MINECRAFT PROJECTS</h3>
+            <p>Personal server worlds and setups — configuring, tweaking and building environments for playing with friends. A hands-on way to learn infrastructure.</p>
+            <div class="tech-row"><span class="chip">SERVER CONFIG</span><span class="chip">WORLDBUILDING</span></div>
+            <a class="btn btn-sm" href="projects.html#p2" data-nav>VIEW PROJECT</a>
+          </div>
+        </article>
+
+        <article class="glass work-card reveal" data-delay="1" data-tilt>
+          <div class="work-media">
+            <img src="web-experiments.webp" alt="Floating translucent browser frames with neon wireframes and particle streams in dark space" loading="lazy">
+            <span class="scan" aria-hidden="true"></span>
+            <span class="chip cat work-cat">WEB</span>
+          </div>
+          <div class="work-body">
+            <h3>FUTURISTIC WEB EXPERIENCES</h3>
+            <p>Interface experiments — glassmorphism, motion, particle systems and cinematic layouts. This entire website is the biggest specimen of the series.</p>
+            <div class="tech-row"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JAVASCRIPT</span></div>
+            <a class="btn btn-sm" href="projects.html#p4" data-nav>VIEW PROJECT</a>
+          </div>
+        </article>
+
+        <article class="glass work-card reveal" data-delay="2" data-tilt>
+          <div class="work-media">
+            <img src="ai-experiments.webp" alt="Glowing neural network constellation with data streams in purple and cyan" loading="lazy">
+            <span class="scan" aria-hidden="true"></span>
+            <span class="chip cat work-cat">AI</span>
+          </div>
+          <div class="work-body">
+            <h3>AI EXPERIMENTS</h3>
+            <p>Exploring AI tools as a creative partner: prompt workflows, AI-assisted coding and generated concept art — always reviewed and rebuilt by hand.</p>
+            <div class="tech-row"><span class="chip">AI TOOLS</span><span class="chip">PROMPTING</span></div>
+            <a class="btn btn-sm" href="projects.html#p5" data-nav>VIEW PROJECT</a>
+          </div>
+        </article>
+
+        <article class="glass work-card reveal" data-delay="3" data-tilt>
+          <div class="work-media">
+            <img src="hosting-ui.webp" alt="Abstract server hall with glowing racks and floating glassmorphic control panels" loading="lazy">
+            <span class="scan" aria-hidden="true"></span>
+            <span class="chip cat work-cat">UI / UX</span>
+          </div>
+          <div class="work-body">
+            <h3>HOSTING UI</h3>
+            <p>Interface studies for server control panels — dark glass, readable data, calm neon. Practice work for the kind of product I want to build someday.</p>
+            <div class="tech-row"><span class="chip">UI DESIGN</span><span class="chip">MOTION</span></div>
+            <a class="btn btn-sm" href="projects.html#p1" data-nav>VIEW PROJECT</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- cinematic band: character overlooking the city -->
+    <section class="g-featured reveal" style="margin-top:56px">
+      <img src="works-city.webp" alt="Original anime-inspired character seen from behind, overlooking a neon cyberpunk megacity at night" loading="lazy">
+      <div class="g-cap"><b>THE BUILDER OVERLOOKING HIS DIGITAL CITY</b><span>// ORIGINAL ART</span></div>
+    </section>
+  </div>
+</main>
+
+<div class="hud" aria-hidden="true">NISHANT // <span class="hud-ok">ONLINE</span><br>NODE: <b>INDIA</b><br>MODE: <b>BUILDING</b><br>CORE: <b>ACTIVE</b></div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="index.html" data-nav>NISHANT<i>.</i></a>
+        <p>A personal digital universe — AI experiments, web builds, Minecraft infrastructure and phonk atmosphere. Hand-built with vanilla HTML, CSS and JavaScript.</p>
+      </div>
+      <div>
+        <div class="foot-h">Navigate</div>
+        <ul class="foot-links">
+          <li><a href="index.html" data-nav>HOME</a></li>
+          <li><a href="about.html" data-nav>ABOUT</a></li>
+          <li><a href="projects.html" data-nav>PROJECTS</a></li>
+          <li><a href="skills.html" data-nav>SKILLS</a></li>
+          <li><a href="gallery.html" data-nav>GALLERY</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-h">Signal</div>
+        <ul class="foot-links">
+          <li><a href="music.html" data-nav>MUSIC ROOM</a></li>
+          <li><a href="status.html" data-nav>SYSTEM STATUS</a></li>
+          <li><a href="contact.html" data-nav>CONTACT</a></li>
+          <li><button class="copy-btn" data-copy="BLANKONTOPP">DISCORD: BLANKONTOPP ⧉</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 NISHANT DAHIYA — ALL VISUALS ORIGINAL</span>
+      <span>NO COOKIES · NO TRACKERS · VANILLA CODE</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

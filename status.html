@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NISHANT DAHIYA — Status</title>
+<meta name="description" content="Personal system status dashboard of Nishant Dahiya: online state, Discord handle, current focus, interests, local time and a boot terminal. No private data exposed.">
+<meta property="og:title" content="NISHANT DAHIYA — Status">
+<meta property="og:description" content="A personal system dashboard: online state, current focus, local time and boot terminal. Broad region only — no private information.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="./status.html">
+<meta property="og:image" content="hero-character.jpg">
+<meta name="theme-color" content="#04020a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2304020a'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='36' text-anchor='middle' fill='%2322d3ee'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="status" data-hud>
+
+<div id="boot" role="status" aria-label="Loading site">
+  <div class="boot-logo">NISHANT<b>.</b></div>
+  <div class="boot-bar"><i></i></div>
+  <div class="boot-log">
+    <span>INITIALIZING DIGITAL IDENTITY</span>
+    <span>LOADING VISUAL CORE</span>
+    <span>CONNECTING</span>
+    <span>READY</span>
+  </div>
+  <button class="boot-skip">SKIP BOOT →</button>
+</div>
+
+<div class="bg-system" aria-hidden="true">
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-aurora a1"></div><div class="bg-aurora a2"></div>
+  <div class="bg-fog"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-orb o1"></div><div class="bg-orb o2"></div>
+  <div class="bg-scan"></div><div class="bg-grain"></div>
+</div>
+
+<div id="cursor-dot" aria-hidden="true"></div>
+<div id="cursor-glow" aria-hidden="true"></div>
+<div id="page-fx" aria-hidden="true"></div>
+
+<header id="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html" data-nav aria-label="NISHANT — home">NISHANT<i>.</i></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-nav>HOME</a></li>
+        <li><a href="about.html" data-nav>ABOUT</a></li>
+        <li><a href="works.html" data-nav>MY WORK</a></li>
+        <li><a href="projects.html" data-nav>PROJECTS</a></li>
+        <li><a href="skills.html" data-nav>SKILLS</a></li>
+        <li><a href="gallery.html" data-nav>GALLERY</a></li>
+        <li><a href="music.html" data-nav>MUSIC</a></li>
+        <li><a href="status.html" data-nav aria-current="page">STATUS</a></li>
+        <li><a href="contact.html" data-nav>CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <span class="nav-status"><span class="dot"></span> ONLINE</span>
+      <button class="nav-discord" data-copy="BLANKONTOPP" title="Copy my Discord username">BLANKONTOPP</button>
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+    <div class="page-head">
+      <span class="page-kicker">FILE // IDENTITY-08</span>
+      <h1 class="page-title glitch" data-text="SYSTEM STATUS">SYSTEM STATUS</h1>
+      <p class="page-sub">The honest dashboard. Local time is read from your device clock in IST; uptime is this browsing session only. No precise location, no private data — ever.</p>
+    </div>
+
+    <div class="status-grid">
+      <section class="glass stat-card reveal">
+        <div class="stat-label">Identity</div>
+        <div class="stat-value">NISHANT DAHIYA</div>
+        <div class="stat-sub stat-online"><span class="dot"></span> ONLINE</div>
+      </section>
+
+      <section class="glass stat-card reveal" data-delay="1">
+        <div class="stat-label">Discord</div>
+        <div class="stat-value mono">BLANKONTOPP</div>
+        <div class="stat-sub"><button class="copy-btn" data-copy="BLANKONTOPP">COPY HANDLE ⧉</button></div>
+      </section>
+
+      <section class="glass stat-card reveal" data-delay="2">
+        <div class="stat-label">Current Status</div>
+        <div class="stat-value" style="color:var(--blue)">BUILDING</div>
+        <div class="stat-sub">MODE: SHIP SMALL, LEARN FAST</div>
+      </section>
+
+      <section class="glass stat-card reveal">
+        <div class="stat-label">Current Focus</div>
+        <div class="stat-value">WEB DEVELOPMENT</div>
+        <div class="stat-sub">VANILLA HTML · CSS · JS</div>
+      </section>
+
+      <section class="glass stat-card wide reveal" data-delay="1">
+        <div class="stat-label">Interests</div>
+        <div class="interest-row">
+          <span class="chip">AI</span>
+          <span class="chip">MINECRAFT</span>
+          <span class="chip">HOSTING</span>
+          <span class="chip">DESIGN</span>
+          <span class="chip cat">WEB</span>
+          <span class="chip pink">PHONK</span>
+        </div>
+      </section>
+
+      <section class="glass stat-card reveal" data-delay="2">
+        <div class="stat-label">Local Time</div>
+        <div class="stat-value mono" id="clock-time">--:--:--</div>
+        <div class="stat-sub" id="clock-date">LOADING DATE…</div>
+        <div class="stat-sub">TIMEZONE: IST (UTC+05:30)</div>
+      </section>
+
+      <section class="glass stat-card wide reveal" data-delay="3">
+        <div class="stat-label">System Status</div>
+        <div style="margin-top:14px;display:flex;flex-direction:column;gap:10px">
+          <div class="kv"><b>SESSION UPTIME</b><span id="uptime">00:00</span></div>
+          <div class="kv"><b>VISUAL CORE</b><span style="color:var(--ok)">ACTIVE</span></div>
+          <div class="kv"><b>AUDIO ENGINE</b><span style="color:var(--ok)">AUTOPLAY ARMED — TAP FALLBACK IF BLOCKED</span></div>
+          <div class="kv"><b>HOSTING</b><span>STATIC FILES · ANY WEB HOST</span></div>
+          <div class="kv"><b>PRIVACY</b><span>NO COOKIES · NO TRACKERS · BROAD REGION ONLY</span></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="terminal reveal" data-term style="margin-top:40px">
+      <div class="term-bar"><i></i><i></i><i></i><span>nishant@digital-universe: ~/status</span></div>
+      <div class="term-body">
+        <div class="t-line">connecting...</div>
+        <div class="t-line">identity verified</div>
+        <div class="t-line">discord linked</div>
+        <div class="t-line">profile online</div>
+        <div class="t-line ok">system ready</div>
+        <span class="term-caret" aria-hidden="true"></span>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="hud" aria-hidden="true">NISHANT // <span class="hud-ok">ONLINE</span><br>NODE: <b>INDIA</b><br>MODE: <b>BUILDING</b><br>CORE: <b>ACTIVE</b></div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="index.html" data-nav>NISHANT<i>.</i></a>
+        <p>A personal digital universe — AI experiments, web builds, Minecraft infrastructure and phonk atmosphere. Hand-built with vanilla HTML, CSS and JavaScript.</p>
+      </div>
+      <div>
+        <div class="foot-h">Navigate</div>
+        <ul class="foot-links">
+          <li><a href="index.html" data-nav>HOME</a></li>
+          <li><a href="about.html" data-nav>ABOUT</a></li>
+          <li><a href="works.html" data-nav>MY WORK</a></li>
+          <li><a href="projects.html" data-nav>PROJECTS</a></li>
+          <li><a href="skills.html" data-nav>SKILLS</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-h">Signal</div>
+        <ul class="foot-links">
+          <li><a href="music.html" data-nav>MUSIC ROOM</a></li>
+          <li><a href="gallery.html" data-nav>GALLERY</a></li>
+          <li><a href="contact.html" data-nav>CONTACT</a></li>
+          <li><button class="copy-btn" data-copy="BLANKONTOPP">DISCORD: BLANKONTOPP ⧉</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 NISHANT DAHIYA — ALL VISUALS ORIGINAL</span>
+      <span>NO COOKIES · NO TRACKERS · VANILLA CODE</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

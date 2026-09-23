@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NISHANT DAHIYA — Projects</title>
+<meta name="description" content="Technical project dashboard of Nishant Dahiya: Cloust Host, Minecraft server, personal digital identity, web experiments and AI experiments — status, stack and self-assessed progress.">
+<meta property="og:title" content="NISHANT DAHIYA — Projects">
+<meta property="og:description" content="A technical dashboard of personal projects: status, technology and honest progress bars. Demo and concept work is clearly labelled.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="./projects.html">
+<meta property="og:image" content="hero-character.jpg">
+<meta name="theme-color" content="#04020a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2304020a'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='36' text-anchor='middle' fill='%2322d3ee'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="projects" data-hud>
+
+<div id="boot" role="status" aria-label="Loading site">
+  <div class="boot-logo">NISHANT<b>.</b></div>
+  <div class="boot-bar"><i></i></div>
+  <div class="boot-log">
+    <span>INITIALIZING DIGITAL IDENTITY</span>
+    <span>LOADING VISUAL CORE</span>
+    <span>CONNECTING</span>
+    <span>READY</span>
+  </div>
+  <button class="boot-skip">SKIP BOOT →</button>
+</div>
+
+<div class="bg-system" aria-hidden="true">
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-aurora a1"></div><div class="bg-aurora a2"></div>
+  <div class="bg-fog"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-orb o1"></div><div class="bg-orb o2"></div>
+  <div class="bg-scan"></div><div class="bg-grain"></div>
+</div>
+
+<div id="cursor-dot" aria-hidden="true"></div>
+<div id="cursor-glow" aria-hidden="true"></div>
+<div id="page-fx" aria-hidden="true"></div>
+
+<header id="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html" data-nav aria-label="NISHANT — home">NISHANT<i>.</i></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-nav>HOME</a></li>
+        <li><a href="about.html" data-nav>ABOUT</a></li>
+        <li><a href="works.html" data-nav>MY WORK</a></li>
+        <li><a href="projects.html" data-nav aria-current="page">PROJECTS</a></li>
+        <li><a href="skills.html" data-nav>SKILLS</a></li>
+        <li><a href="gallery.html" data-nav>GALLERY</a></li>
+        <li><a href="music.html" data-nav>MUSIC</a></li>
+        <li><a href="status.html" data-nav>STATUS</a></li>
+        <li><a href="contact.html" data-nav>CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <span class="nav-status"><span class="dot"></span> ONLINE</span>
+      <button class="nav-discord" data-copy="BLANKONTOPP" title="Copy my Discord username">BLANKONTOPP</button>
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+    <div class="page-head">
+      <span class="page-kicker">FILE // IDENTITY-04</span>
+      <h1 class="page-title glitch" data-text="PROJECTS">PROJECTS</h1>
+      <p class="page-sub">The technical view. Progress bars are <strong>self-assessed build progress</strong>, not audited metrics. Concept and demo work is labelled — no invented statistics, no fake users, no fake uptime.</p>
+    </div>
+
+    <div class="proj-list">
+
+      <article class="glass proj reveal" id="p1">
+        <div>
+          <div class="proj-head">
+            <span class="proj-code">PROJECT 01</span>
+            <h3>CLOUST HOST</h3>
+            <span class="chip warn">CONCEPT / IN DEVELOPMENT</span>
+          </div>
+          <p>Personal hosting brand concept. I design futuristic control-panel interfaces and study how real hosting stacks work — panels, nodes, resource limits. The UI art and layouts are mine; the production infrastructure is still a learning goal, not a running service.</p>
+          <div class="proj-tags"><span class="chip">UI DESIGN</span><span class="chip">HTML / CSS</span><span class="chip">HOSTING CONCEPTS</span><span class="chip">SERVER STUDY</span></div>
+        </div>
+        <div class="proj-side">
+          <div class="kv"><b>STATUS</b><span>CONCEPT BUILD</span></div>
+          <div class="kv"><b>TECHNOLOGY</b><span>HTML · CSS · DESIGN</span></div>
+          <div>
+            <div class="meter-row"><span>BUILD PROGRESS (SELF-ASSESSED)</span><span>45%</span></div>
+            <div class="meter"><i data-level="45"></i></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="glass proj reveal" id="p2">
+        <div>
+          <div class="proj-head">
+            <span class="proj-code">PROJECT 02</span>
+            <h3>MINECRAFT SERVER</h3>
+            <span class="chip ok">PERSONAL / ACTIVE</span>
+          </div>
+          <p>Personal Minecraft server environments for playing and experimenting with friends: configuration, plugins and world setups. A practical sandbox for learning how servers, resources and players interact.</p>
+          <div class="proj-tags"><span class="chip">SERVER CONFIG</span><span class="chip">PLUGINS</span><span class="chip">WORLDBUILDING</span></div>
+        </div>
+        <div class="proj-side">
+          <div class="kv"><b>STATUS</b><span>RUNNING FOR FRIENDS</span></div>
+          <div class="kv"><b>TECHNOLOGY</b><span>SERVER CONFIG · TOOLS</span></div>
+          <div>
+            <div class="meter-row"><span>BUILD PROGRESS (SELF-ASSESSED)</span><span>60%</span></div>
+            <div class="meter"><i data-level="60"></i></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="glass proj reveal" id="p3">
+        <div>
+          <div class="proj-head">
+            <span class="proj-code">PROJECT 03</span>
+            <h3>PERSONAL DIGITAL IDENTITY</h3>
+            <span class="chip ok">ACTIVE — YOU ARE INSIDE IT</span>
+          </div>
+          <p>This website: a multi-page digital universe with a shared design system, canvas particle background, original anime-inspired character art, a synthesized phonk loop and zero frameworks. Every page you navigate is part of this project.</p>
+          <div class="proj-tags"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">VANILLA JS</span><span class="chip">CANVAS</span><span class="chip">WEB AUDIO</span></div>
+        </div>
+        <div class="proj-side">
+          <div class="kv"><b>STATUS</b><span>LIVE (STATIC HOST)</span></div>
+          <div class="kv"><b>TECHNOLOGY</b><span>HTML · CSS · JS</span></div>
+          <div>
+            <div class="meter-row"><span>BUILD PROGRESS (SELF-ASSESSED)</span><span>90%</span></div>
+            <div class="meter"><i data-level="90"></i></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="glass proj reveal" id="p4">
+        <div>
+          <div class="proj-head">
+            <span class="proj-code">PROJECT 04</span>
+            <h3>WEB EXPERIMENTS</h3>
+            <span class="chip pink">ONGOING LAB</span>
+          </div>
+          <p>A running lab of interface experiments: glassmorphism, magnetic buttons, cursor physics, scroll reveals, particle fields and page transitions. Ideas that survive the lab graduate into real pages of this site.</p>
+          <div class="proj-tags"><span class="chip">JAVASCRIPT</span><span class="chip">MOTION</span><span class="chip">CANVAS</span><span class="chip">UI LAB</span></div>
+        </div>
+        <div class="proj-side">
+          <div class="kv"><b>STATUS</b><span>ONGOING</span></div>
+          <div class="kv"><b>TECHNOLOGY</b><span>JS · CSS · CANVAS</span></div>
+          <div>
+            <div class="meter-row"><span>BUILD PROGRESS (SELF-ASSESSED)</span><span>55%</span></div>
+            <div class="meter"><i data-level="55"></i></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="glass proj reveal" id="p5">
+        <div>
+          <div class="proj-head">
+            <span class="proj-code">PROJECT 05</span>
+            <h3>AI EXPERIMENTS</h3>
+            <span class="chip">EXPLORING</span>
+          </div>
+          <p>Hands-on exploration of AI tools: prompt engineering, AI-assisted development workflows and generated concept art that I then correct, crop and art-direct by hand. The goal is learning to steer AI, not to copy its output blindly.</p>
+          <div class="proj-tags"><span class="chip">AI TOOLS</span><span class="chip">PROMPT ENGINEERING</span><span class="chip">ART DIRECTION</span></div>
+        </div>
+        <div class="proj-side">
+          <div class="kv"><b>STATUS</b><span>EXPLORING</span></div>
+          <div class="kv"><b>TECHNOLOGY</b><span>AI TOOLS · WORKFLOWS</span></div>
+          <div>
+            <div class="meter-row"><span>BUILD PROGRESS (SELF-ASSESSED)</span><span>40%</span></div>
+            <div class="meter"><i data-level="40"></i></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="form-note reveal" style="margin-top:34px">NOTE // Percentages above describe how far I personally feel each build has come. They are self-assessments for motivation, not measured or verified statistics.</p>
+  </div>
+</main>
+
+<div class="hud" aria-hidden="true">NISHANT // <span class="hud-ok">ONLINE</span><br>NODE: <b>INDIA</b><br>MODE: <b>BUILDING</b><br>CORE: <b>ACTIVE</b></div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="index.html" data-nav>NISHANT<i>.</i></a>
+        <p>A personal digital universe — AI experiments, web builds, Minecraft infrastructure and phonk atmosphere. Hand-built with vanilla HTML, CSS and JavaScript.</p>
+      </div>
+      <div>
+        <div class="foot-h">Navigate</div>
+        <ul class="foot-links">
+          <li><a href="index.html" data-nav>HOME</a></li>
+          <li><a href="about.html" data-nav>ABOUT</a></li>
+          <li><a href="works.html" data-nav>MY WORK</a></li>
+          <li><a href="skills.html" data-nav>SKILLS</a></li>
+          <li><a href="gallery.html" data-nav>GALLERY</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-h">Signal</div>
+        <ul class="foot-links">
+          <li><a href="music.html" data-nav>MUSIC ROOM</a></li>
+          <li><a href="status.html" data-nav>SYSTEM STATUS</a></li>
+          <li><a href="contact.html" data-nav>CONTACT</a></li>
+          <li><button class="copy-btn" data-copy="BLANKONTOPP">DISCORD: BLANKONTOPP ⧉</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 NISHANT DAHIYA — ALL VISUALS ORIGINAL</span>
+      <span>NO COOKIES · NO TRACKERS · VANILLA CODE</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

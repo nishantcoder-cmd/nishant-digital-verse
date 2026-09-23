@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NISHANT DAHIYA — Music</title>
+<meta name="description" content="The phonk room of Nishant Dahiya's digital universe. A local synthesized phonk loop with a futuristic player and live visualizer — audio starts only after you press ENTER.">
+<meta property="og:title" content="NISHANT DAHIYA — Music">
+<meta property="og:description" content="Enter the phonk room: cinematic lighting, live visualizer and a local audio loop. No autoplay — you choose when the sound starts.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="./music.html">
+<meta property="og:image" content="hero-character.jpg">
+<meta name="theme-color" content="#04020a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2304020a'/%3E%3Ctext x='32' y='45' font-family='monospace' font-size='36' text-anchor='middle' fill='%2322d3ee'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="music">
+
+<div id="boot" role="status" aria-label="Loading site">
+  <div class="boot-logo">NISHANT<b>.</b></div>
+  <div class="boot-bar"><i></i></div>
+  <div class="boot-log">
+    <span>INITIALIZING DIGITAL IDENTITY</span>
+    <span>LOADING VISUAL CORE</span>
+    <span>CONNECTING</span>
+    <span>READY</span>
+  </div>
+  <button class="boot-skip">SKIP BOOT →</button>
+</div>
+
+<div class="bg-system" aria-hidden="true">
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-photo" style="background-image:url('nebula-bg.webp')"></div>
+  <div class="bg-aurora a1"></div><div class="bg-aurora a2"></div>
+  <div class="bg-fog"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-scan"></div><div class="bg-grain"></div>
+</div>
+
+<div id="cursor-dot" aria-hidden="true"></div>
+<div id="cursor-glow" aria-hidden="true"></div>
+<div id="page-fx" aria-hidden="true"></div>
+
+<header id="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html" data-nav aria-label="NISHANT — home">NISHANT<i>.</i></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-nav>HOME</a></li>
+        <li><a href="about.html" data-nav>ABOUT</a></li>
+        <li><a href="works.html" data-nav>MY WORK</a></li>
+        <li><a href="projects.html" data-nav>PROJECTS</a></li>
+        <li><a href="skills.html" data-nav>SKILLS</a></li>
+        <li><a href="gallery.html" data-nav>GALLERY</a></li>
+        <li><a href="music.html" data-nav aria-current="page">MUSIC</a></li>
+        <li><a href="status.html" data-nav>STATUS</a></li>
+        <li><a href="contact.html" data-nav>CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <span class="nav-status"><span class="dot"></span> ONLINE</span>
+      <button class="nav-discord" data-copy="BLANKONTOPP" title="Copy my Discord username">BLANKONTOPP</button>
+      <button class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ ENTER GATE (no autoplay before this) ============ -->
+<div class="music-gate" id="music-gate">
+  <div class="gate-rings" aria-hidden="true"></div>
+  <h1 class="gate-title">THE PHONK ROOM</h1>
+  <p class="gate-sub">BASS-HEAVY LOOP · AUTOPLAY ARMED</p>
+  <button class="gate-btn" id="gate-enter" data-magnetic>ENTER</button>
+  <p class="gate-sub" style="opacity:.6">HEADPHONES RECOMMENDED · IF THE BROWSER BLOCKS SOUND, ONE TAP STARTS IT</p>
+</div>
+
+<main class="page">
+  <div class="container">
+    <div class="page-head">
+      <span class="page-kicker">FILE // IDENTITY-07</span>
+      <h1 class="page-title glitch" data-text="MUSIC">MUSIC</h1>
+      <p class="page-sub">The atmosphere layer of the universe — a phonk loop synthesized from scratch with code, played through a futuristic console.</p>
+    </div>
+
+    <div class="music-room">
+      <figure class="music-art reveal">
+        <img src="music-headphones.webp" alt="Original anime character with glowing futuristic headphones in a dark neon room" loading="lazy">
+      </figure>
+
+      <section class="glass music-player reveal" data-delay="1" aria-label="Music player">
+        <div class="mp-top">
+          <div class="mp-now">
+            <span>NOW PLAYING</span>
+            <b>phonk.mp3 — local synthesized loop</b>
+          </div>
+          <span class="mp-live" id="mp-live"><span class="dot" style="background:#6f6890;box-shadow:none;animation:none"></span> AUDIO LINK IDLE</span>
+        </div>
+
+        <canvas class="mp-viz" id="mp-viz" aria-label="Audio visualizer" role="img"></canvas>
+
+        <div class="mp-progress">
+          <span id="mp-cur">00:00</span>
+          <div class="mp-bar" id="mp-bar" role="slider" aria-label="Seek position" tabindex="0"><i></i></div>
+          <span id="mp-dur">01:01</span>
+        </div>
+
+        <div class="mp-controls">
+          <button class="mp-play" id="mp-play" aria-label="Play music">
+            <svg viewBox="0 0 24 24" class="ic-play"><path d="M8 5v14l11-7z"/></svg>
+            <svg viewBox="0 0 24 24" class="ic-pause" style="display:none"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+          </button>
+          <div class="mp-vol">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4H4z"/><path d="M16 9a4 4 0 010 6M18.5 6.5a8 8 0 010 11"/></svg>
+            <input type="range" id="mp-vol" min="0" max="100" value="70" aria-label="Volume">
+          </div>
+        </div>
+
+        <p class="form-note">AUDIO PROTOCOL // The track is a local file (phonk.mp3) — a bass-heavy phonk loop synthesized from scratch in code: tuned 808s, a sustained sub layer and a low-shelf boost under 160 Hz. Autoplay is armed on every page; if the browser's policy blocks sound before your first tap/keypress, the mini player will say "TAP ANYWHERE TO ENABLE AUDIO" and start on that tap. It keeps playing as you browse other pages.</p>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="index.html" data-nav>NISHANT<i>.</i></a>
+        <p>A personal digital universe — AI experiments, web builds, Minecraft infrastructure and phonk atmosphere. Hand-built with vanilla HTML, CSS and JavaScript.</p>
+      </div>
+      <div>
+        <div class="foot-h">Navigate</div>
+        <ul class="foot-links">
+          <li><a href="index.html" data-nav>HOME</a></li>
+          <li><a href="about.html" data-nav>ABOUT</a></li>
+          <li><a href="works.html" data-nav>MY WORK</a></li>
+          <li><a href="projects.html" data-nav>PROJECTS</a></li>
+          <li><a href="skills.html" data-nav>SKILLS</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-h">Signal</div>
+        <ul class="foot-links">
+          <li><a href="gallery.html" data-nav>GALLERY</a></li>
+          <li><a href="status.html" data-nav>SYSTEM STATUS</a></li>
+          <li><a href="contact.html" data-nav>CONTACT</a></li>
+          <li><button class="copy-btn" data-copy="BLANKONTOPP">DISCORD: BLANKONTOPP ⧉</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 NISHANT DAHIYA — ALL VISUALS ORIGINAL</span>
+      <span>NO COOKIES · NO TRACKERS · VANILLA CODE</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
